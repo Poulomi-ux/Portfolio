@@ -1,0 +1,45 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --highlightcolor:#0097B2;
+}
+
+body{
+
+    margin:0px;
+    padding: 0px;
+}
+.header{
+    background-color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:50px;
+}
+.content{
+    margin-left:64px;
+    margin-right:64px;
+}
+.color_shade{
+    height:32px;
+    width:32px;
+    border-radius: 22px;
+    background-color: var(--highlightcolor);
+    cursor: pointer;
+}
+.body{
+    background-image: url(../img/bg_port.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+}
+.profile_dv{
+    background-color: var(--white);
+    border-radius: 22px;
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+}
+.profile_dv img{
+    object-fit: cover;
+}
