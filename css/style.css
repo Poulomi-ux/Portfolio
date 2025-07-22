@@ -32,6 +32,7 @@ body{
     background-repeat: no-repeat;
     height:100vh;
     width: 100%;
+    aspect-ratio: 16 / 9; /* Keeps a 16:9 aspect ratio */
 }
 .profile_dv{
     background-color: var(--white);
@@ -39,7 +40,36 @@ body{
     text-align: center;
     padding: 15px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
 }
 .profile_dv img{
     object-fit: cover;
+}
+.contact_dv{
+    height: 471px;
+    background-color: var(--white);
+    border-radius: 18px;
+    margin-top: -12%;
+}
+.footer{
+    text-align: center;
+    background-color: var(--highlightcolor);
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+.profile_title{
+    font-size: 26px;
+}
+.profile_designation{
+    background: #D9D9D9;
+    width: 192px;
+    text-align: center;
+    margin: auto;
+    border-radius: 4px;
+    height:27px;
 }
