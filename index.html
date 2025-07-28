@@ -26,10 +26,10 @@
     <div class="body">
         <div class="content">
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-lg-3">
+                <div class="col-md-12 col-sm-12 col-lg-4 col-xl-3 order-1 order-md-1">
                     <div class="row">
                         <div class="offset-md-2 col-md-8">
-                            <div class="profile_dv mt-4">
+                            <div class="profile_dv mt-5">
                                 <img src="img/PHOTO FRAME.png" class="img-fluid"> 
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                             <div class="contact_dv p-3">
                                 <p class="profile_title text-center pt-5 mb-1 fw-bold">Mr. X</p>
                                 <div class="profile_designation">t/t desg</div>
-                                <div class="dv_contactdetails mt-2 p-4">
+                                <div class="dv_contactdetails mt-3 p-4 mb-5">
                                     <div class="d-flex gap-3">
                                         <div class="contact_icon p-2"><i class="bi bi-telephone-fill"></i></div>
                                         <div class="contact_details">
@@ -57,14 +57,14 @@
                                     <div class="d-flex gap-3 mt-3">
                                         <div class="contact_icon p-2"><i class="bi bi-linkedin"></i></div>
                                         <div class="contact_details">
-                                            <p class="mb-0 text-secondary">Phone:</p>
+                                            <p class="mb-0 text-secondary">Linkdin Link:</p>
                                             <a href="mailto:riddhi.poulomi@gmail.com">riddhi.poulomi@gmail.com</a>
                                         </div>
                                     </div>
                                      <div class="d-flex gap-3 mt-3">
                                         <div class="contact_icon p-2"><i class="bi bi-geo-fill"></i></div>
                                         <div class="contact_details">
-                                            <p class="mb-0 text-secondary">Phone:</p>
+                                            <p class="mb-0 text-secondary">Location:</p>
                                             <a href="mailto:riddhi.poulomi@gmail.com">riddhi.poulomi@gmail.com</a>
                                         </div>
                                     </div>
@@ -73,13 +73,104 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7"></div>
-                <div class="col-md-2"></div>
+                <div class="col-md-12 col-sm-12 col-lg-7 col-xl-8 order-3 order-md-2">
+                    <div class="about_dv p-5">
+                        <h2 class="section_title">About</h2>
+                        <p class="sec_desc">
+                            Hello! My name is xxxxxx, and I’m a passionate UI/UX developer with 6 years of experience in creating user-centered  designs. I specialize in translating complex problems into intuitive, engaging user experiences. My background includes proficiency in design tools such as Figma, and Photoshop, as well as front-end development skills in HTML, CSS, and JavaScript, React.
+                            <br />
+                            I believe that great design combines creativity with functionality, and I enjoy collaborating with cross-functional teams to deliver solutions that not only meet user needs but also drive business goals. I’m excited about the opportunity to contribute my skills to an organization and help create exceptional digital experiences.
+                        </p>
+                        <h2>What I Do</h2>
+                        <div class="sec_iconlist d-flex flex-column flex-md-row">
+                            <div class="icon_box">
+                                <img src="img/figma_icon.png" class="img-fluid">
+                            </div>
+                               <div class="icon_box">
+                                <img src="img/react_icon.png" class="img-fluid">
+                            </div>
+                               <div class="icon_box">
+                                <img src="img/js_icon.png" class="img-fluid">
+                            </div>
+                               <div class="icon_box">
+                                <img src="img/photoshop_icon.png" class="img-fluid">
+                            </div>
+                               <div class="icon_box">
+                                <img src="img/html_icon.png" class="img-fluid">
+                            </div>
+                               <div class="icon_box">
+                                <img src="img/css_icon.png" class="img-fluid">
+                            </div>
+                            <div class="icon_box">
+                                <img src="img/jq_icon.png" class="img-fluid">
+                            </div>
+                            <div class="icon_box">
+                                <img src="img/bootstrap_icon.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="contact_sec p-5">
+                        <h2 class="section_title">Contact</h2>
+                       
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-1 col-xl-1 order-2 order-md-3">
+                    <div class="link_sec pt-2">
+                        <ul class="p-0 text-center">
+                            <li>
+                                <a class="p-3" id="profile"><i class="bi bi-person"></i></a>
+                            </li>
+                            <li>
+                                <a class="p-3" id="resume"><i class="bi bi-file-arrow-down-fill"></i></i></a>
+                            </li>
+                            <li>
+                                <a class="p-3" id="job"><i class="bi bi-briefcase"></i></a>
+                            </li>
+                            <li>
+                                <a class="p-3" id="contact"><i class="bi bi-person-lines-fill"></i></a>
+                            </li>
+                            <li>
+                                <a class="p-3" id="social"><i class="bi bi-behance"></i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="footer">
         <p class="pt-2"><i>copyright@abc.com</i></p>
     </div>
+    <script>
+        $(document).ready(function () {
+        // Show div1 by default
+        $('.about_dv').addClass('show');
+        $('#profile').addClass('active');
+        // Show div1 on click
+        $('#profile').click(function () {
+            $('.about_dv').addClass('show');
+            $(this).addClass('active');
+            
+        });
+
+        $('#contact').click(function () {
+            $('.about_dv').removeClass('show');
+            $('.contact_sec').addClass('show');
+            $(this).addClass('active');
+        });
+
+        // Show div2 on click
+        // $('#showDiv2').click(function () {
+        //     $('.content-div').removeClass('active');
+        //     $('#div2').addClass('active');
+        // });
+        });
+  </script>
 </body>
+
 </html>
