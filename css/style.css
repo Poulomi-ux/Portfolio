@@ -15,8 +15,8 @@ body{
     height:50px;
 }
 .content{
-    margin-left:64px;
-    margin-right:64px;
+    margin-left:21px;
+    margin-right:21px;
 }
 .color_shade{
     height:32px;
@@ -30,7 +30,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    /* height:100vh; */
     width: 100%;
     aspect-ratio: 16 / 9; /* Keeps a 16:9 aspect ratio */
 }
@@ -50,7 +50,7 @@ body{
     height: auto;
     background-color: var(--white);
     border-radius: 18px;
-    margin-top: -12%;
+    margin-top: -14%;
 }
 .footer{
     text-align: center;
@@ -93,4 +93,76 @@ body{
 }
 .contact_details{
     line-height: 19px;
+}
+.about_dv{
+    height: auto;
+    background: #fff;
+    margin-top: 8rem;
+    border-radius: 18px;
+    display: none;
+}
+
+.contact_sec{
+    height: auto;
+    background: #fff;
+    margin-top: 8rem;
+    border-radius: 18px;
+    display:none;
+}
+.link_sec{
+    height: 515px;
+    background: #fff;
+    margin-top: 8rem;
+    border-radius: 18px;
+}
+.section_title{
+    position: relative;
+}
+.section_title::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 140px;
+    background-color: var(--highlightcolor);
+    top: 20px;
+    left: 119px;
+}
+.sec_desc{
+    text-align: justify;
+    font-size: 14px;
+}
+.icon_box{
+    background: #D9D9D9;
+    padding: 10px;
+    border-radius: 8px;
+    width: 23%;
+    flex: 0 auto;
+    text-align: center;
+}
+.sec_iconlist{
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.link_sec ul li{
+    list-style: none;
+    margin-top: 38%;
+}
+.link_sec ul li a{
+    color: #878181;
+    font-size: 37px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+.link_sec ul li a:hover{
+    background-color: var(--highlightcolor);
+    color: var(--white);
+    cursor: pointer;
+}
+.link_sec .active{
+    background-color: var(--highlightcolor);
+    color: var(--white);
+    cursor: pointer;
+}
+.show{
+    display:block;
 }
