@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-sm-12 col-lg-7 col-xl-8 order-3 order-md-2">
+                <div class="col-md-12 col-sm-12 col-lg-7 col-xl-8 order-3 order-md-2 parent_dv">
                     <div class="about_dv p-5">
                         <h2 class="section_title">About</h2>
                         <p class="sec_desc">
@@ -147,28 +147,25 @@
         <p class="pt-2"><i>copyright@abc.com</i></p>
     </div>
     <script>
-        $(document).ready(function () {
-        // Show div1 by default
+    $(document).ready(function () {
+
+        $('.link_sec ul li a').on('click', function() {
+             $('.link_sec ul li a').removeClass('active');  // Remove from all
+             $(this).addClass('active');   
+        });
+
         $('.about_dv').addClass('show');
         $('#profile').addClass('active');
-        // Show div1 on click
         $('#profile').click(function () {
-            $('.about_dv').addClass('show');
-            $(this).addClass('active');
-            
+             $('.parent_dv div').removeClass('show');
+              $('.about_dv').addClass('show');
         });
 
         $('#contact').click(function () {
-            $('.about_dv').removeClass('show');
+            $('.parent_dv div').removeClass('show');
             $('.contact_sec').addClass('show');
-            $(this).addClass('active');
+          
         });
-
-        // Show div2 on click
-        // $('#showDiv2').click(function () {
-        //     $('.content-div').removeClass('active');
-        //     $('#div2').addClass('active');
-        // });
         });
   </script>
 </body>
